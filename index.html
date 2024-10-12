@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>My First Map</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.30/"></script>
+    
+    <script>
+        require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
+        esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurO2PIuQbn2dr1LG393YMOWIrVnI9xBLty7Y4H28CTPJuvXVzFsnCzJ-6kTZ67FoQ0i5TFb9nYiOuMvw6YSexr6N4MDCmDYyOIuJ2Wr0x41ytZe6-vwEr-TAvyItp8B8DDXGfIzzm5qaidAxLO5YsczQQc6HI3zDHjAbzTAgikFg7NLNwWSDxl1fUqRbQmF-HLHo9fHTtHgUAS6LLEt7nS3g.AT1_DcIO5Ss8";
+        });
+      </script>    
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
